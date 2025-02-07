@@ -1,0 +1,18 @@
+import { createClient } from "next-sanity";
+import imageUrlBuilder from "@sanity/image-url";
+import type { SanityImageSource } from "@sanity/image-url/lib/types/types";
+
+export const client = createClient({
+  projectId:
+    process.env.SANITY_STUDIO_PROJECT_ID! ||
+    process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+  dataset: "mcfwebsitedata",
+  apiVersion: "2024-03-01",
+  useCdn: process.env.NODE_ENV === "production",
+});
+
+const builder = imageUrlBuilder(client);
+
+export function urlFor(source: SanityImageSource) {
+  return builder.image(source);
+}
