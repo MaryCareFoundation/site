@@ -39,7 +39,7 @@ export default function HeroSection() {
             </FadeIn>
 
             <FadeIn delay={0.6}>
-              <div className="flex max-md:flex-col max-md:items-center gap-10 mt-20">
+              <div className="flex max-md:flex-col max-md:items-center gap-10 mt-10 md:mt-20">
                 <Button
                   asChild
                   variant="default"
@@ -55,6 +55,7 @@ export default function HeroSection() {
                   alt="Curl Arrow"
                   width={80}
                   height={80}
+                  className="max-lg:hidden"
                 />
                 <Button
                   variant="link"
