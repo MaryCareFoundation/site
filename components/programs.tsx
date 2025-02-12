@@ -75,8 +75,11 @@ export function Programs() {
       <div className="grid gap-8 md:grid-cols-2">
         {programs.map((program) => {
           const Icon = program.icon;
-          const categorySlug = programToBlogCategory[program.title as keyof typeof programToBlogCategory];
-          
+          const categorySlug =
+            programToBlogCategory[
+              program.title as keyof typeof programToBlogCategory
+            ];
+
           return (
             <Card
               key={program.title}

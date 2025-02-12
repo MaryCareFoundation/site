@@ -41,7 +41,7 @@ function FundingSection() {
         </div>
       </div>
       <TypographyH2 className="text-center mx-auto text-secondary mt-20">
-        Founders’ Vision
+        Founder’s Vision
       </TypographyH2>
       <div className="flex max-md:flex-col items-center gap-10 mx-auto justify-center mt-20">
         <Image

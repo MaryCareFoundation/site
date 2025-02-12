@@ -140,7 +140,7 @@ export default function ContactSection() {
                 href="tel:07058811900"
                 className="text-gray-700 hover:text-secondary"
               >
-                07058811900
+                +2347058811900
               </a>
             </div>
 

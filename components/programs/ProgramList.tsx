@@ -5,7 +5,7 @@ const programs = [
     title: "SAVE TIME, SAVE LIFE",
     goal: "Provide support to care for pregnant women and babies without delay.",
     description:
-      "We provide immediate healthcare, drugs, materials, and other medical consumables to patients in dire need for pregnant women and their babies who have enrolled under the foundation and at maternal and pediatric sections. We also collaborate with individuals and hospitals to support pregnant mothers and children in need. We procure packs for emergency cesarean section packs to be donated to the Labour wards of clinics and hospitals. OAUTHC, Ile-Ife Osun state and Wesley Guild Hospital, Ilesa, Osun state have beneficiaries.",
+      "We provide immediate healthcare, drugs, materials, and other medical consumables to patients in dire need for pregnant women and their babies who have enrolled under the foundation and at maternal and pediatric sections. We also collaborate with individuals and hospitals to support pregnant mothers and children in need. We procure emergency cesarean section packs to be donated to the labour wards of clinics and hospitals. OAUTHC, Ile-Ife, Osun State, and Wesley Guild Hospital, Ilesa, Osun State, are among the beneficiaries.",
     image: "/mother_daughter.jpeg",
     icon: "time" as const,
   },

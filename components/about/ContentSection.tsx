@@ -7,6 +7,7 @@ interface ContentSectionProps {
   title: string;
   description: string;
   imageFirst?: boolean;
+  imageUrl?: string;
 }
 
 export default function ContentSection({
@@ -14,6 +15,7 @@ export default function ContentSection({
   title,
   description,
   imageFirst = false,
+  imageUrl,
 }: ContentSectionProps) {
   const Content = () => (
     <div className="relative w-full lg:w-1/2 p-8 lg:p-12">
@@ -34,7 +36,7 @@ export default function ContentSection({
   const Image = () => (
     <div className="w-full lg:w-1/2 flex justify-center">
       <FramedImage
-        src="/mother_baby.jpeg"
+        src={imageUrl || "/placeholder.svg"}
         alt="A parent holding a baby outdoors in a natural setting"
       />
     </div>
