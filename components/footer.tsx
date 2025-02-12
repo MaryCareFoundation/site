@@ -60,7 +60,7 @@ export function Footer() {
                 label: "save time, save life",
               },
               {
-                href: `/blog?category=${programToBlogCategory["HEALTH PRACTIONALS EMPOWERMENT PROGRAM"]}`,
+                href: `/blog?category=${programToBlogCategory["HEALTH PRACTITIONERS EMPOWERMENT PROGRAM"]}`,
                 label: "health practitioner empowerment program",
               },
               {

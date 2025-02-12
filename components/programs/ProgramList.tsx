@@ -10,7 +10,7 @@ const programs = [
     icon: "time" as const,
   },
   {
-    title: "HEALTH PRACTIONALS EMPOWERMENT PROGRAM",
+    title: "HEALTH PRACTITIONERS EMPOWERMENT PROGRAM",
     goal: "Provide training for healthcare workers through seminars and workshops.",
     description:
       "We organize trainings for health care workers towards capacity building. Page 6 of 10 We improve nursing and healthcare in emergencies while addressing the issue of delay in accessing peak healthcare. With this program, we equip, support and enhance the efficiency and development of health practitioners and supporting stakeholders. This helps us to deliver quality, safe and best global practices for MCH to mothers and babies.",

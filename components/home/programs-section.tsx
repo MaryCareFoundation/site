@@ -22,7 +22,7 @@ function ProgramsSection() {
     },
     {
       icon: <Users size={28} className="text-white" />,
-      title: "HEALTH PRACTIONALS EMPOWERMENT PROGRAM",
+      title: "HEALTH PRACTITIONERS EMPOWERMENT PROGRAM",
       description:
         "Provide training for healthcare workers through seminars and  workshops.",
     },

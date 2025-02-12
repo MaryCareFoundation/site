@@ -20,8 +20,8 @@ export function BlogFilter({ value, onValueChange }: BlogFilterProps) {
       <SelectContent>
         <SelectItem value="all">All Programs</SelectItem>
         <SelectItem value="save-time">SAVE TIME, SAVE LIFE</SelectItem>
-        <SelectItem value="health-professionals">
-          HEALTH PRACTIONALS EMPOWERMENT PROGRAM
+        <SelectItem value="health-practitioners">
+          HEALTH PRACTITIONERS EMPOWERMENT PROGRAM
         </SelectItem>
         <SelectItem value="girl-child">TRAIN A GIRL CHILD PROJECT</SelectItem>
         <SelectItem value="maternal-health">
