@@ -18,7 +18,7 @@ export default async function Home() {
       <ProgramsSection />
       <BeneficiariesSection />
       <TestimonialsSection />
-
+      <FAQSection />
       {/* {homepage?.sections
         ?.sort((a, b) => a.order - b.order)
         .map((section) => (

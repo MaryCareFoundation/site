@@ -18,7 +18,7 @@ function Intro() {
           <TypographyP className="text-[#6B6969] max-w-screen-xl text-center mx-auto">
             Mary Care Foundation (MCF), formerly known as the Maternal and Child
             Charity Pet Project, was founded in 2019 at Wesley Guide Hospital,
-            Ilesha, Osun State by Mary T. Bifari. It is a non-governmental and
+            Ilesha, Osun State by Mary T. Bifarin. It is a non-governmental and
             non-profit organization aimed at creating an enabling environment
             supporting women during maternal and perinatal stages of pregnancy
             especially those who cannot afford materials and drugs for treatment

@@ -9,7 +9,7 @@ export function TypographyH1({
 }) {
   return (
     <h1
-      className={`${className} ${young_serif_font} scroll-m-20 text-4xl font-normal tracking-tight lg:text-6xl`}
+      className={`${className} ${young_serif_font} scroll-m-20 text-4xl lg:text-5xl font-normal tracking-tight xl:text-6xl`}
     >
       {children}
     </h1>

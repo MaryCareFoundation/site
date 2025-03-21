@@ -58,7 +58,7 @@ export default function RootLayout({
         >
           <Navigation />
           <main className="min-h-screen">{children}</main>
-          <FAQSection />
+         
           <Footer />
           <Toaster />
         </ThemeProvider>

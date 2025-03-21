@@ -30,13 +30,13 @@ function ProgramsSection() {
       icon: <GraduationCap size={28} className="text-white" />,
       title: "TRAIN A GIRL CHILD PROJECT",
       description:
-        "Provide training for healthcare workers through seminars and  workshops.",
+        "Educational support, training, and capacity development to inspire and empower young girls",
     },
     {
       icon: <Stethoscope size={28} className="text-white" />,
       title: "MATERNAL HEALTH RESEARCH",
       description:
-        "Provide training for healthcare workers through seminars and  workshops.",
+        "Collaboration with researchers and specialists to build research capabilities and contribute to our local community",
     },
   ];
   return (

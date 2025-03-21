@@ -169,10 +169,11 @@ export function DonationForm({ onClose }: DonationFormProps) {
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="save-time">
-                    Save Time, Save Life
+                  SAVE TIME, SAVE LIFE
                   </SelectItem>
-                  <SelectItem value="education">Educational Support</SelectItem>
-                  <SelectItem value="healthcare">Healthcare Support</SelectItem>
+                  <SelectItem value="healthcare-practitioners-empowerment">HEALTH PRACTITIONERS EMPOWERMENT PROGRAM</SelectItem>
+                  <SelectItem value="train-a-girl-child-project">TRAIN A GIRL CHILD PROJECT</SelectItem>
+                  <SelectItem value="maternal-health-research">MATERNAL HEALTH RESEARCH</SelectItem>
                 </SelectContent>
               </Select>
             </div>

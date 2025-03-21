@@ -44,7 +44,7 @@ export function Footer() {
                 height={50}
               />
               <Image
-                src="/oauthc_logo.png"
+                src="/oauthc_logo.jpg"
                 alt="OAUTHC Logo"
                 width={40}
                 height={40}
@@ -53,7 +53,7 @@ export function Footer() {
           </div>
 
           <FooterNav
-            title="PROGRAMS"
+            title="Socials"
             links={[
               {
                 href: `/blog?category=${programToBlogCategory["SAVE TIME, SAVE LIFE"]}`,
@@ -82,6 +82,7 @@ export function Footer() {
                 { href: "/blog", label: "Blog" },
                 { href: "/gallery", label: "Gallery" },
                 { href: "/contact", label: "Contact" },
+                { href: "/faq", label: "Faq" },
               ]}
             />
           </div>

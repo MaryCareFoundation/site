@@ -52,15 +52,7 @@ export function MobileNav() {
               {link.label}
             </Link>
           ))}
-          <Link href="/get-involved" onClick={() => setOpen(false)}>
-            <Button
-              variant="default"
-              className="w-full mt-4 rounded-lg"
-              size="lg"
-            >
-              Get Involved
-            </Button>
-          </Link>
+        
         </nav>
       </SheetContent>
     </Sheet>

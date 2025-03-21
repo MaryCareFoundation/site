@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { TypographyH4, TypographySpan } from "../typography";
+import { TypographyH4, TypographyP, TypographySpan } from "../typography";
 import Image from "next/image";
 import FramedImage from "../FramedImage";
 import { FadeIn } from "../animations/fade-in";
@@ -10,60 +10,54 @@ function VisionMissionSection() {
   return (
     <div
       id="vision-mission"
-      className="grid md:grid-cols-3 max-md:place-items-center container mx-auto gap-5 my-[20vh]"
+      className="container mx-auto px-4 my-[15vh] md:my-[20vh]"
     >
-      <FadeIn delay={0.2}>
-        <div className="min-h-[30vh]">
-          <div>
-            <div className="flex items-center gap-3 overflow-hidden">
-              <Image
-                src={"/icons/vision.svg"}
-                alt="Vision Icon"
-                width={20}
-                height={20}
-              />
-              <TypographySpan className="font-bold text-2xl text-secondary">
-                Our Vision
-              </TypographySpan>
-            </div>
-            <br />
-            <TypographySpan className="font-medium text-2xl">
-              is to create maternal and perinatal support for mothers; and
-              empowerment for young girls to thrive.{" "}
+      <div className="grid lg:grid-cols-3 gap-y-12 lg:gap-5">
+        <FadeIn delay={0.2} className="flex flex-col justify-center">
+          <div className="flex items-center gap-3 mb-4">
+            <Image
+              src={"/icons/vision.svg"}
+              alt="Vision Icon"
+              width={20}
+              height={20}
+            />
+            <TypographySpan className="font-bold text-xl md:text-2xl text-secondary">
+              Our Vision
             </TypographySpan>
           </div>
-        </div>
-      </FadeIn>
+          <TypographyP className="text-left font-medium text-lg md:text-2xl">
+            create maternal and perinatal support for mothers; and
+            empowerment for young girls to thrive.
+          </TypographyP>
+        </FadeIn>
 
-      <FadeIn
-        delay={0.4}
-        className="flex items-center justify-center relative overflow-hidden"
-      >
-        <FramedImage src="/mother_baby.jpeg" alt="mother_baby" />
-      </FadeIn>
-
-      <FadeIn delay={0.6}>
-        <div className="min-h-[30vh] flex flex-col justify-end">
-          <div className="mt-auto">
-            <div className="flex items-center gap-3">
-              <Image
-                src={"/icons/admission.svg"}
-                alt="Mission Icon"
-                width={20}
-                height={20}
-              />
-              <TypographySpan className="font-bold text-2xl text-secondary">
-                Our Mission
-              </TypographySpan>
-            </div>
-            <br />
-            <TypographySpan className="max-w-sm font-medium text-2xl">
-              is to contribute to the challenges of perinatal health of women
-              and marginalization of girls in our community.
-            </TypographySpan>
+        <FadeIn
+          delay={0.4}
+          className="flex items-center justify-center"
+        >
+          <div className="w-full overflow-x-hidden flex justify-center">
+            <FramedImage src="/mother_baby.jpeg" alt="mother_baby" />
           </div>
-        </div>
-      </FadeIn>
+        </FadeIn>
+
+        <FadeIn delay={0.6} className="flex flex-col justify-center">
+          <div className="flex items-center md:justify-end gap-3 mb-4">
+            <Image
+              src={"/icons/admission.svg"}
+              alt="Mission Icon"
+              width={22}
+              height={22}
+            />
+            <TypographyH4 className="font-bold text-xl md:text-2xl text-secondary">
+              Our Mission
+            </TypographyH4>
+          </div>
+          <TypographyP className="text-left md:text-right font-medium text-lg md:text-2xl">
+            contribute to the challenges of perinatal health of women
+            and marginalization of girls in our community.
+          </TypographyP>
+        </FadeIn>
+      </div>
     </div>
   );
 }

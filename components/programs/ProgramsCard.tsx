@@ -59,7 +59,7 @@ export default function ProgramCard({
               className="text-white mt-6 md:text-xl text-center mx-auto flex items-center justify-center underline p-0 hover:text-white/80"
               size={"lg"}
             >
-              CHECK OUT OUR BLOGS ON THIS PROGRAM →
+              Read more →
             </Button>
           </Link>
         </div>

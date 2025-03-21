@@ -148,7 +148,7 @@ export default function FAQSection() {
         <div className="grid md:grid-cols-2 gap-6">
           {/* Left Column */}
           <div className="space-y-4">
-            {questions.slice(0, 10).map((item) => (
+            {questions.slice(0, 3).map((item) => (
               <Accordion key={item.id} type="single" collapsible>
                 <AccordionItem value={item.id}>
                   <AccordionTrigger className="text-left">
@@ -164,7 +164,7 @@ export default function FAQSection() {
 
           {/* Right Column */}
           <div className="space-y-4">
-            {questions.slice(10).map((item) => (
+            {questions.slice(3,6).map((item) => (
               <Accordion key={item.id} type="single" collapsible>
                 <AccordionItem value={item.id}>
                   <AccordionTrigger className="text-left">

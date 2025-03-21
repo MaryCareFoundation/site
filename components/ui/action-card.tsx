@@ -42,7 +42,7 @@ export function ActionCard({
         {details}
         {title == "COLLABORATE" ? (
           <Link
-            href={`mailto:email=jejeniyi7@gmail.com&subject=${encodeURIComponent("Collaboration Inquiry")}`}
+            href={`mailto:email=marycarefoundationofficial@gmail.com&subject=${encodeURIComponent("Collaboration Inquiry")}`}
           >
             <Button className="bg-[#003B3B] hover:bg-[#2F6F6F]">
               {buttonText}

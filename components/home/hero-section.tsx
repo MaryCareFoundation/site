@@ -40,53 +40,39 @@ export default function HeroSection() {
 
             <FadeIn delay={0.6}>
               <div className="flex max-md:flex-col max-md:items-center gap-10 mt-10 md:mt-20">
-                <Button
-                  asChild
-                  variant="default"
-                  size="lg"
-                  className="rounded-lg"
-                >
-                  <Link href="/get-involved">
-                    Donate Now <Heart fill="white" size={20} />
-                  </Link>
-                </Button>
-                <Image
-                  src="/curl-arrow.svg"
-                  alt="Curl Arrow"
-                  width={80}
-                  height={80}
-                  className="max-lg:hidden"
-                />
-                <Button
-                  variant="link"
-                  className="text-secondary border-2 border-secondary rounded-lg"
-                  size="lg"
-                  onClick={scrollToNextSection}
-                >
-                  Learn More <ArrowRight fill="currentColor" size={20} />
-                </Button>
+              <Link href="/get-involved">
+            <Button variant="default" className="rounded-lg" size="lg">
+              Get Involved
+            </Button>
+          </Link>
               </div>
             </FadeIn>
 
             <FadeIn delay={0.8}>
-              <div className="flex justify-evenly w-full mt-20">
+              <div className="flex gap-10 w-full mt-5">
                 <Image
                   src="/oau_logo.png"
                   alt="OAU Logo"
-                  width={40}
-                  height={40}
+                  width={80}
+                  height={80}
+                  quality={100}
+                  className="object-contain"
                 />
                 <Image
-                  src="/oauthc_logo.png"
+                  src="/oauthc_logo.jpg"
                   alt="OAUTHC Logo"
-                  width={40}
-                  height={40}
+                  width={80}
+                  height={80}
+                  quality={100}
+                  className="object-contain"
                 />
                 <Image
-                  src="/liverpool_logo.png"
+                  src="/liverpool_logo.svg"
                   alt="liverpool Logo"
-                  width={130}
-                  height={50}
+                  className="object-contain"
+                  width={200}
+                  height={130}
+                  quality={100}
                 />
               </div>
             </FadeIn>

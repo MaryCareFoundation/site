@@ -41,14 +41,14 @@ function FundingSection() {
         </div>
       </div>
       <TypographyH2 className="text-center mx-auto text-secondary mt-20">
-        Founder’s Vision
+        Meet the Founder
       </TypographyH2>
-      <div className="flex max-md:flex-col items-center gap-10 mx-auto justify-center mt-20">
+      <div className="flex max-md:flex-col max-md:items-center gap-10 mx-auto justify-center mt-20">
         <Image
           src={"/MAMA_T.jpg"}
           alt="Mary Bifarin"
-          width={300}
-          height={300}
+          width={160}
+          height={160}
         />
         <div>
           <TypographyP className="max-w-prose">
@@ -61,10 +61,7 @@ function FundingSection() {
             post-retirement, Mrs. Bifarin continues to advance her education,
             currently pursuing a Master’s degree at ABUAD.
           </TypographyP>
-          <br />
-          <TypographyP className="font-bold">
-            Mrs. Mary T. Bifarin (Founder)
-          </TypographyP>
+      
         </div>
       </div>
     </div>

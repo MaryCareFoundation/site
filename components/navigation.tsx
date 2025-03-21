@@ -46,11 +46,11 @@ export function Navigation() {
     >
       <div className="container mx-auto flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
-          <Image
+          <img
             src="/MCF_LOGO.png"
             alt="Mary Care Foundation"
-            width={150}
-            height={150}
+            width={200}
+         
           />
         </Link>
 
@@ -74,11 +74,7 @@ export function Navigation() {
             </NavigationMenuList>
           </NavigationMenu>
 
-          <Link href="/get-involved">
-            <Button variant="default" className="rounded-lg" size="lg">
-              Get Involved
-            </Button>
-          </Link>
+         
         </div>
 
         {/* Mobile Navigation */}
