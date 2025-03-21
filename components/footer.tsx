@@ -38,7 +38,7 @@ export function Footer() {
                 height={40}
               />
               <Image
-                src="/liverpool_logo.png"
+                src="/liverpool_logo.svg"
                 alt="liverpool Logo"
                 width={130}
                 height={50}
