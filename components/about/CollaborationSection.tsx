@@ -1,20 +1,21 @@
 import { Building2, Users } from "lucide-react";
 import { TypographyH2, TypographyH3, TypographyP } from "../typography";
 import { Fragment } from "react";
+import Image from "next/image";
 
 interface CollaboratorProps {
   name: string;
-  icon: "hospital" | "community";
+  icon?: "hospital" | "community";
+  image?: React.ReactNode;
 }
 
-function Collaborator({ name, icon }: CollaboratorProps) {
+function Collaborator({ name, icon,image }: CollaboratorProps) {
   return (
     <div className="flex flex-col items-center text-center">
-      {icon === "hospital" ? (
-        <Building2 className="w-12 h-12 mb-4 text-white" />
-      ) : (
-        <Users className="w-12 h-12 mb-4 text-white" />
-      )}
+      <div className="h-[70px] overflow-hidden flex items-center justify-center mb-4">
+
+      {image}
+      </div>
       <TypographyH3 className="text-white text-lg font-medium max-w-[200px]">
         {name}
       </TypographyH3>
@@ -31,18 +32,47 @@ export default function CollaborationsSection() {
     {
       name: "OBAFEMI AWOLOWO UNIVERSITY TEACHING HOSPITAL, ILE-IFE.",
       icon: "hospital",
+      image:    <Image
+                      src="/oauthc_logo.jpg"
+                      alt="OAUTHC Logo"
+                      width={70}
+                      height={70}
+                      style={{ objectFit: "contain" }}
+                      className="rounded-full"
+                    />
     },
     {
-      name: "WESLEY GUILD HOSPITAL, ILESHA",
+      name: "WESLEY GUILD HOSPITAL, ILESHA(Loocal Communities (Enuwa, ABAGBORO))",
       icon: "hospital",
+      image:  <Image
+                      src="/Wesley_Guild.png"
+                      alt="Wesley Logo"
+                      width={70}
+                      height={70}
+                      style={{ objectFit: "contain" }}
+                    />
     },
     {
-      name: "ABAGBORO COMMUNITY",
+      name: "JOS UNIVERSITY TEACHING HOSPITAL, JOS, NIGERIA",
       icon: "community",
+      image:  <Image
+                      src="/JUTH-Logo.jpg"
+                      alt="JUTH Logo"
+                      width={70}
+                      height={70}
+                      style={{ objectFit: "contain" }}
+                    />
     },
     {
-      name: "ENUWA, ILE-IFE",
+      name: "LIVERPOOL JOHN MOORES UNIVERSITY, LIVERPOOL, UK",
       icon: "community",
+      image:   <Image
+                      src="/liverpool-logo-colored.webp"
+                      alt="liverpool Logo"
+                      width={180}
+                      height={60}
+                      style={{ objectFit: "contain" }}
+                    />
     },
   ];
 

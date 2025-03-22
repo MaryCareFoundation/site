@@ -51,7 +51,7 @@ export default function HeroSection() {
             <FadeIn delay={0.8}>
               <div className="flex gap-10 w-full mt-5">
                 <Image
-                  src="/oau_logo.png"
+                  src="/oau_logo.webp"
                   alt="OAU Logo"
                   width={80}
                   height={80}
@@ -64,7 +64,8 @@ export default function HeroSection() {
                   width={80}
                   height={80}
                   quality={100}
-                  className="object-contain"
+                            style={{ objectFit: "contain" }}
+                className="rounded-full"
                 />
                 <Image
                   src="/liverpool_logo.svg"

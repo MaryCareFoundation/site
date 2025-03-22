@@ -21,12 +21,12 @@ function VisionMissionSection() {
               width={20}
               height={20}
             />
-            <TypographySpan className="font-bold text-xl md:text-2xl text-secondary">
+            <TypographyH4 className="font-bold text-xl md:text-2xl text-secondary">
               Our Vision
-            </TypographySpan>
+            </TypographyH4>
           </div>
           <TypographyP className="text-left font-medium text-lg md:text-2xl">
-            create maternal and perinatal support for mothers; and
+            to create maternal and perinatal support for mothers; and
             empowerment for young girls to thrive.
           </TypographyP>
         </FadeIn>
@@ -53,7 +53,7 @@ function VisionMissionSection() {
             </TypographyH4>
           </div>
           <TypographyP className="text-left md:text-right font-medium text-lg md:text-2xl">
-            contribute to the challenges of perinatal health of women
+            to contribute to the challenges of perinatal health of women
             and marginalization of girls in our community.
           </TypographyP>
         </FadeIn>

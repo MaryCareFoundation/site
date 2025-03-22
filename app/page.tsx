@@ -17,7 +17,7 @@ export default async function Home() {
       <VisionMissionSection />
       <ProgramsSection />
       <BeneficiariesSection />
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
       <FAQSection />
       {/* {homepage?.sections
         ?.sort((a, b) => a.order - b.order)

@@ -148,7 +148,7 @@ export default function ContactSection() {
               <div className="flex items-center gap-3">
                 <Facebook className="w-6 h-6 text-secondary" />
                 <a
-                  href="https://facebook.com/MarycareFoudation"
+                  href="https://facebook.com/profile.php?id=100093809224156&mibextid=LQQJ4d"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-700 hover:text-secondary"

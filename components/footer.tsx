@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Heart, Instagram, Facebook, Twitter } from "lucide-react";
+import { Heart, Instagram, Facebook, Twitter, X, InstagramIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import {
@@ -14,7 +14,7 @@ export function Footer() {
   return (
     <footer className="border-t bg-[#002B2E]">
       <div className="container mx-auto py-8">
-        <div className="grid gap-16 md:grid-cols-3">
+        <div className="grid gap-16 md:grid-cols-2">
           <div>
             <Link href="/" className="mb-4 flex items-center space-x-2">
               <Image
@@ -30,50 +30,34 @@ export function Footer() {
               postpartum period. MCF (with registration number: 184127), also
               contributes to young girls’ empowerment.
             </TypographyP>
-            <div className="flex gap-10 mt-5">
+            <div className="flex items-center max-md:flex-wrap gap-10 mt-5">
               <Image
-                src="/oau_logo.png"
+                src="/oau_logo.webp"
                 alt="OAU Logo"
-                width={40}
-                height={40}
+                width={70}
+                height={70}
+                style={{ objectFit: "contain" }}
               />
               <Image
                 src="/liverpool_logo.svg"
                 alt="liverpool Logo"
-                width={130}
-                height={50}
+                width={180}
+                height={100}
+                style={{ objectFit: "contain" }}
               />
               <Image
                 src="/oauthc_logo.jpg"
                 alt="OAUTHC Logo"
-                width={40}
-                height={40}
+                width={70}
+                height={70}
+                style={{ objectFit: "contain" }}
+                className="rounded-full"
               />
             </div>
           </div>
 
-          <FooterNav
-            title="Socials"
-            links={[
-              {
-                href: `/blog?category=${programToBlogCategory["SAVE TIME, SAVE LIFE"]}`,
-                label: "save time, save life",
-              },
-              {
-                href: `/blog?category=${programToBlogCategory["HEALTH PRACTITIONERS EMPOWERMENT PROGRAM"]}`,
-                label: "health practitioner empowerment program",
-              },
-              {
-                href: `/blog?category=${programToBlogCategory["TRAIN A GIRL CHILD PROJECT"]}`,
-                label: "train a girl child project",
-              },
-              {
-                href: `/blog?category=${programToBlogCategory["MATERNAL HEALTH RESEARCH"]}`,
-                label: "maternal health research",
-              },
-            ]}
-          />
-          <div className="flex justify-between w-full">
+        
+          <div className="flex md:justify-evenly max-md:gap-20 w-full">
             <FooterNav
               title="LINKS"
               links={[
@@ -85,6 +69,26 @@ export function Footer() {
                 { href: "/faq", label: "Faq" },
               ]}
             />
+
+<FooterNav
+            title="Socials"
+            row
+            links={[
+              {
+                href: `https://facebook.com/profile.php?id=100093809224156&mibextid=LQQJ4d`,    
+                label:  <Facebook className="w-6 h-6 text-white" />,
+              },
+              {
+                href: `https://instagram.com/marycarefoundationofficial`,
+                label:   <InstagramIcon className="w-6 h-6 text-white" />,
+              },
+              {
+                href: `https://twitter.com/MCFofficial`,
+                label:  <X className="w-6 h-6 text-white" />,
+              },
+      
+            ]}
+          />
           </div>
         </div>
 
@@ -100,14 +104,16 @@ export function Footer() {
 function FooterNav({
   title,
   links,
+  row
 }: {
   title: string;
-  links: { href: string; label: string }[];
+  links: { href: string; label: string | React.ReactNode }[];
+  row?: boolean;
 }) {
   return (
     <div>
       <h3 className="mb-4 text-white font-semibold">{title}</h3>
-      <ul className="space-y-6">
+      <ul className={`${row ? "flex items-center gap-6": "space-y-6 "}`}>
         {links.map((link) => (
           <li key={link.href}>
             <Link href={link.href} passHref>

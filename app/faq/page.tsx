@@ -1,3 +1,4 @@
+import IntroSection from '@/components/IntroSection';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import React from 'react'
 
@@ -135,11 +136,14 @@ function page() {
       ];
     
   return (
-    <div>
+
+    <>
+    <IntroSection title='Faq' description='Find answers to common questions about Mary Care Foundation, our programs, and how you can get involved.' />
+    <div className='container py-20 '>
      <div className="grid md:grid-cols-2 gap-6">
           {/* Left Column */}
           <div className="space-y-4">
-            {questions.slice(4, 8).map((item) => (
+            {questions.slice(4, 10).map((item) => (
               <Accordion key={item.id} type="single" collapsible>
                 <AccordionItem value={item.id}>
                   <AccordionTrigger className="text-left">
@@ -153,9 +157,9 @@ function page() {
             ))}
           </div>
 
-          {/* Right Column */}
+          {/* Right Column */}  
           <div className="space-y-4">
-            {questions.slice(8,12).map((item) => (
+            {questions.slice(10,16).map((item) => (
               <Accordion key={item.id} type="single" collapsible>
                 <AccordionItem value={item.id}>
                   <AccordionTrigger className="text-left">
@@ -170,6 +174,7 @@ function page() {
           </div>
         </div> 
     </div>
+    </>
   )
 }
 
