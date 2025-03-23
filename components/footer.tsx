@@ -54,8 +54,7 @@ export function Footer() {
                 width={70}
                 height={70}
                 style={{ objectFit: "contain" }}
-                className="rounded-full"
- className="max-md:w-[60px] max-md:h-[60px]"
+ className="max-md:w-[60px] max-md:h-[60px] rounded-full"
               />
             </div>
           </div>
