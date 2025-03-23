@@ -45,7 +45,7 @@ export default function CollaborationsSection() {
       name: "WESLEY GUILD HOSPITAL, ILESHA(Loocal Communities (Enuwa, ABAGBORO))",
       icon: "hospital",
       image:  <Image
-                      src="/Wesley_Guild.png"
+                      src="/wesley_guild.png"
                       alt="Wesley Logo"
                       width={70}
                       height={70}
