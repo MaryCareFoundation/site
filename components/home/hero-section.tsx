@@ -49,7 +49,7 @@ export default function HeroSection() {
             </FadeIn>
 
             <FadeIn delay={0.8}>
-              <div className="flex lg:gap-10 gap-5 max-md:flex-wrap w-full mt-5">
+              <div className="max-md:justify-center flex lg:gap-10 gap-5 max-md:flex-wrap w-full mt-5">
                 <Image
                   src="/oau_logo.webp"
                   alt="OAU Logo"
@@ -68,13 +68,13 @@ export default function HeroSection() {
                 className="rounded-full max-md:w-[60px] max-md:w-[60px]"
                 />
                 <Image
-                  src="/liverpool_logo.svg"
-                  alt="liverpool Logo"
-                  className="object-contain max-md:w-[60px] max-md:h-[60px]"
-                  width={200}
-                  height={130}
-                  quality={100}
-                />
+                src="/liverpool-logo-colored.webp"
+                alt="liverpool Logo"
+                width={80}
+                height={80}
+                style={{ objectFit: "contain" }}
+ className="max-md:w-[60px] max-md:h-[60px] rounded-full"
+              />
               </div>
             </FadeIn>
           </div>

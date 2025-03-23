@@ -31,7 +31,7 @@ export function Footer() {
               postpartum period. MCF (with registration number: 184127), also
               contributes to young girls’ empowerment.
             </TypographyP>
-            <div className="flex items-center max-md:flex-wrap gap-10 mt-5">
+            <div className="max-md:justify-center flex items-center max-md:flex-wrap gap-10 mt-5">
               <Image
                 src="/oau_logo.webp"
                 alt="OAU Logo"
@@ -41,12 +41,12 @@ export function Footer() {
                 className="max-md:w-[60px] max-md:h-[60px]"
               />
               <Image
-                src="/liverpool_logo.svg"
+                src="/liverpool-logo-colored.webp"
                 alt="liverpool Logo"
-                width={180}
-                height={100}
+                width={80}
+                height={80}
                 style={{ objectFit: "contain" }}
- className="max-md:w-[100px] max-md:h-[100px]"
+ className="max-md:w-[60px] max-md:h-[60px] rounded-full"
               />
               <Image
                 src="/oauthc_logo.jpg"

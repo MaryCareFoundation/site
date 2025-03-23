@@ -11,10 +11,10 @@ export default function FramedImage({ src, alt }: FramedImageProps) {
         alt="Decorative background"
         width={650}
         height={650}
-        className="absolute left-2 top-24"
+        className="absolute left-2  top-24"
       />
 
-      <div className="aspect-square max-h-[317px] bg-accent max-w-[308px] overflow-hidden rounded-[90px]">
+      <div className="aspect-square max-sm:max-w-[200px] max-h-[317px] bg-accent max-w-[308px] overflow-hidden rounded-[90px]">
         <Image
           src={src}
           alt={alt}
