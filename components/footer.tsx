@@ -20,8 +20,9 @@ export function Footer() {
               <Image
                 src="/MCF_LOGO_white.png"
                 alt="Mary Care Foundation"
-                width={150}
-                height={150}
+                width={200}
+                height={200}
+                quality={100}
               />
             </Link>
             <TypographyP className="text-sm text-white">
