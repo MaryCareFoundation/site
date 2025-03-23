@@ -56,7 +56,7 @@ export default function HeroSection() {
                   width={80}
                   height={80}
                   quality={100}
-                  className="object-contain"
+                  className="object-contain max-md:w-[60px] max-md:h-[60px]"
                 />
                 <Image
                   src="/oauthc_logo.jpg"
@@ -65,12 +65,12 @@ export default function HeroSection() {
                   height={80}
                   quality={100}
                             style={{ objectFit: "contain" }}
-                className="rounded-full"
+                className="rounded-full max-md:w-[60px] max-md:w-[60px]"
                 />
                 <Image
                   src="/liverpool_logo.svg"
                   alt="liverpool Logo"
-                  className="object-contain"
+                  className="object-contain max-md:w-[60px] max-md:h-[60px]"
                   width={200}
                   height={130}
                   quality={100}

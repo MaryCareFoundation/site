@@ -38,6 +38,7 @@ export function Footer() {
                 width={70}
                 height={70}
                 style={{ objectFit: "contain" }}
+                className="max-md:w-[60px] max-md:h-[60px]"
               />
               <Image
                 src="/liverpool_logo.svg"
@@ -45,6 +46,7 @@ export function Footer() {
                 width={180}
                 height={100}
                 style={{ objectFit: "contain" }}
+ className="max-md:w-[100px] max-md:h-[100px]"
               />
               <Image
                 src="/oauthc_logo.jpg"
@@ -53,6 +55,7 @@ export function Footer() {
                 height={70}
                 style={{ objectFit: "contain" }}
                 className="rounded-full"
+ className="max-md:w-[60px] max-md:h-[60px]"
               />
             </div>
           </div>
