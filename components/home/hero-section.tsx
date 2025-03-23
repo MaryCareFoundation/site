@@ -49,7 +49,7 @@ export default function HeroSection() {
             </FadeIn>
 
             <FadeIn delay={0.8}>
-              <div className="flex gap-10 w-full mt-5">
+              <div className="flex lg:gap-10 gap-5 max-md:flex-wrap w-full mt-5">
                 <Image
                   src="/oau_logo.webp"
                   alt="OAU Logo"
