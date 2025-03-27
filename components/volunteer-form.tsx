@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/dialog";
 import { useRouter } from "next/navigation";
 
-const MCF_EMAIL = "jejeniyi7@gmail.com"; // Replace with actual MCF email
+const MCF_EMAIL = "marycarefoundationofficial@gmail.com"; // Replace with actual MCF email
 
 interface VolunteerFormProps {
   onClose: () => void;
