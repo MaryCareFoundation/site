@@ -13,6 +13,7 @@ export default function CurrentProjectsSection() {
           <ProjectCard
             title="Building Capacity to Prevent Adverse Childhood Experiences"
             image="/about/child-experience.png"
+              link="/about/1"
           >
             <ul className="space-y-3">
               <li>
