@@ -17,11 +17,21 @@ export default function CurrentProjectsSection() {
           >
             <ul className="space-y-3">
               <li>
+                <TypographyP >
                 Collaboration with Liverpool John Moores University (2024)
+                </TypographyP>
               </li>
-              <li>Research on healthcare workers' knowledge and practices</li>
+              <li>
+                <TypographyP >
+                Research on healthcare workers' knowledge and practices
+                </TypographyP>
+            </li>
 
-              <li className="pl-6">Status: Ongoing</li>
+              <li className="pl-6">
+                <TypographyP>
+                  Status: Ongoing
+                </TypographyP>
+                </li>
             </ul>
           </ProjectCard>
 
