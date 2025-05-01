@@ -89,3 +89,4 @@ export function TypographySpan({
 }) {
   return <span className={`${className} ${teachers_font}`}>{children}</span>;
 }
+
